@@ -36,20 +36,17 @@ The `delivery.yaml` workflow builds a Docker image from the `Dockerfile` and pus
 
 ## How to Run Locally
 
-1. Clone the repository:
+1. Pull the Docker image:
     ```bash
-    git clone https://github.com/your-username/ci-cd-github-actions.git
+    docker pull ibrahimsifat0/github-actions-test
     ```
 
-2. Install the dependencies:
+2. Run the Docker container:
     ```bash
-    yarn install --frozen-lockfile
+    docker run -p 3000:3000 ibrahimsifat0/github-actions-test
     ```
 
-3. Start the application:
-    ```bash
-    yarn start
-    ```
+3.The application will be accessible at http://localhost:3000.
 
 ## Running Tests
 
